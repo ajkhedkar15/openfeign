@@ -33,10 +33,4 @@ public class UserController {
         return users.get(UUID.fromString(id));
     }
 
-    @GetMapping("/extracted-content/{filePath}")
-    public ResponseEntity<Response<String>> getExtractedPath(@PathVariable String filePath) {
-        String extractedPath = "/extracted-content";
-        filePath = filePath + extractedPath;
-        return ResponseEntity.ok(Response.build(filePath));
-    }
 }
