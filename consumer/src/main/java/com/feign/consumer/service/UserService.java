@@ -17,8 +17,5 @@ public class UserService {
         System.out.println("Created new user = " + addedUser);
         User user = userClient.getUser(addedUser.getUserId().toString());
         System.out.println("User = " + user);
-
-        Response<String> extractedPath = userClient.getExtractedPath("abc.pdf");
-        System.out.println(extractedPath.getData());
     }
 }
