@@ -14,7 +14,4 @@ public interface UserClient {
 
     @RequestLine("GET /user/{id}")
     User getUser(@Param("id") String id);
-
-    @RequestLine("GET /extracted-content/{filePath}")
-    Response<String> getExtractedPath(@Param("filePath") String filePath);
 }
